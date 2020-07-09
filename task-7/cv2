@@ -1,0 +1,19 @@
+# code to create a photo using numpy and open cv
+
+import cv2
+import numpy as np
+import matplotlib
+
+
+img1=np.zeros((600,600,3),np.uint8)                     #Create black matrix (size: 600*600),(using 3 channek),(256 level)as photo
+img1 =cv2.line(img1,(0,0),(300,300),(0,255,255),4)      #draw line (from origin) to (point 300*300) with (blue color) with (thickness 4 mm)
+img1 =cv2.line(img1,(300,300),(0,600),(255,0,0),4)      #draw line (from 300*300) to (point 0*600) with (red color) with (thickness 4 mm)
+img1= cv2.rectangle(img1,(300,0),(600,600),(255,255,255),-1)      #draw rectange(from center) to (end) with (white color) and fiiled
+img1=cv2.putText(img1,"Smart methods",(330,300),cv2.FONT_HERSHEY_SIMPLEX,1,(100,255,0),2)     #write "smart method"
+img1=cv2.circle(img1,(450,300),130,(0,0,255),5)         # draw circle
+
+cv2.imshow('image',img1)    #show output in photo 
+cv2.waitKey(0)
+
+
+matplotlib.image.imsave('name.png', img1) // to save this code as PNG image
