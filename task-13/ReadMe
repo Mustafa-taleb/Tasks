@@ -1,0 +1,16 @@
+I design H-Bridge circute to control DC motor at 2 direction and can load a current up to 5A.
+
+components:
+1-N-channel MOSFET transistor (IRF510)  (4 pieces)
+-Max ID: 5.6 A
+-VDS : 100v
+-Rds=0.54
+-Power dissipation: 43 W
+-fast switching.
+-low price (10 pieces less than 2 $)
+Note: The datasheet (https://www.vishay.com/docs/91015/sihf510.pdf)
+2-DC mototr ( I use 12v motor but yot can use a bigger)
+3-DC voltage source(24 V)
+4-pull-up resistor (2 pieces)
+5-resistor to prevent latch up (2 pieces)
+6-button as switch (2 pieces)
