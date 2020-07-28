@@ -1,0 +1,24 @@
+Steps to connect an HTML page with MYSQL database using php:
+
+pre-process:
+1-Download a program (XAMPP),that support Appache web server(to run PHP code) & MYSQL(to create database).
+2-after install it, run xammp-control.exe
+3-press on start of modules: Appache & MYSQL.
+
+create database:
+4-run any web browser in your computer then write (http://localhost/phpmyadmin/).
+5-from left, choose New.
+6-name your database then click on create (test).
+7-from left list,choose your database.
+8-name the table (table_test) with number of coulnms (6) then click on go button.
+9-fill the databse, then save it.
+
+Write database statements that need to applied on your database:
+1-create a new PHP file.
+2-establish the connection ($mysqli = new mysqli("localhost", "username", "password", "dbname");).
+3-write database statements.
+4-terminate the connection.
+
+Edit HTML page to connect with PHP code
+1-add (form) tag 
+2-add (type) $ (name) at each button
